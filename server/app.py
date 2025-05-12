@@ -13,7 +13,7 @@ def print_string(param):
 
 @app.route('/count/<int:param>')
 def count(param):
-    return "<br>".join(str(i) for i in range(param))
+    return "\n".join(str(i) for i in range(param)) + "\n"
 
 @app.route('/math/<int:num1>/<string:operation>/<int:num2>')
 def math(num1, operation, num2):
